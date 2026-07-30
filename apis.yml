@@ -1,7 +1,27 @@
 aid: medsci
-name: medsci
-description: medsci is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/medsci.png
+name: MedSci
+description: MedSci (梅斯医学 / MedSci Healthcare Holdings Limited, HKEX 2415) is a leading
+  online professional physician platform in China, founded in 2012 and headquartered
+  in Shanghai. It connects roughly 2.9 million registered physician users with pharmaceutical
+  and medical device companies through big data and AI, offering physician platform
+  solutions (medical knowledge, clinical study assistance), precision omni-channel
+  marketing, real-world study (RWS) solutions, and the MedSci xAI medical AI agent.
+  Surfaced as a portfolio company of Qiming Venture Partners and added to the API Evangelist
+  network. No public third-party developer API program, OpenAPI/SDK, or developer
+  portal was found; the primary web host is geo-restricted and unreachable for HTTP
+  probing.
 url: https://raw.githubusercontent.com/api-evangelist/medsci/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,20 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-hkex-ticker: '2415'
+x-founded: '2012'
+x-headquarters: Shanghai, China
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Medical
+- Physician Platform
+- Artificial Intelligence
+- Real-World Evidence
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/medsci-domain-security.yml
 - type: Website
-  url: https://medsci.cn
+  url: https://www.medsci.cn
+- type: Company
+  url: https://www.medscihealthcare.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
